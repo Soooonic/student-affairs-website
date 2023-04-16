@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+ {% block content %}
+ {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students status</title>
+</head>
+<body style="background-image: url('{% static 'image/back.png' %}');">
+<form>
+    <div class="status">
+        <h1>Status</h1>
+        <p>choose the students status:</p>
+        <!--active input-->
+        <input required type="radio" name="t1" id="depart">
+        <label>Active</label>
+        <!--inactive input-->
+        <input  required type="radio" name="t1">
+        <label>inactive</label>
+        <input required type="submit" value="search">
+
+    </div>
+</form>
+</body>
+</html>
+{% endblock content %}

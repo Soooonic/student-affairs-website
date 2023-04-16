@@ -1,0 +1,49 @@
+{%extends 'base.html'%}
+ {% block content %}
+ {% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <TItle>
+            select deparment
+        </TItle>
+    
+    </head>
+    <body style="background-image: url('{% static 'image/back.png' %}');">
+        <div class="inside_sid">
+        <script defer src="{% static 'js/select department.js' %}"></script>
+        <form onsubmit="return seletDepartment();" method="GET">
+            <div>
+                <input 
+                type="text"  
+                value = "student name" 
+                disabled>
+    
+                <input 
+                type="text" 
+                value = "student ID" 
+                disabled>
+                
+                <input 
+                type="text" 
+                value="student level" 
+                disabled>
+                <hr />
+                <label for="depart" >Select Department</label>
+                <select name="deparment" id="depart" required>
+                    <option selected hidden>selet department</option>
+                    <option value="cs">Computer science</option>
+                    <option value="is">Information system</option>
+                    <OPtion value="ai">Artificial intelligence</OPtion> 
+                    <option value="it">Information technology</option>
+                    <option value="ds">Desision support</option>
+                </select>
+                <br />
+                <input type="submit" value="save">
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
+{% endblock content %}

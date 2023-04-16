@@ -1,0 +1,128 @@
+ {%extends 'base.html'%}
+ {% block content %}
+ {% load static %}
+ <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+        update page
+    </title>
+    
+    
+  </head>
+  <body style="background-image: url('{% static 'image/back.png' %}');">
+  <div class="update">
+      <form method="post">
+          
+          
+          <div id="head">
+              <label>ID </label>
+              <input type="text" placeholder="Enter your id"/>
+
+              <label id="name">Name </label>
+              <input type="text" placeholder="Enter your name"/>
+              <button id="search" >Search</button>
+
+
+          </div >
+          <br />
+          <div>
+               <label>ID </label>
+              <input type="text" disabled class="fixed" placeholder="Your id" name="id"/>
+
+
+          </div>
+          <br />
+          <div>
+              <label>Name </label>
+              <input type="text" disabled class="fixed" placeholder="Your name" name="Name"/>
+
+
+          </div>
+          <br />
+          <div>
+              <label>Date of birth </label>
+              <input type="date"/>
+
+
+          </div>
+          <br />
+          <div>
+              <label> Gender</label>
+              <input type="radio" name="gender" class="gender" name="gender" />
+              <label>Male</label>
+              <input type="radio" name="gender" class="gender" name="gender"/>
+              <label>Female</label>
+
+          </div>
+          <br />
+          <div>
+              <label>Level </label>
+              <select class="select">
+                  <option>Choose your level</option>
+                  <option>first</option>
+                  <option>second</option>
+                  <option>third</option>
+                  <option>fourth</option>
+
+              </select>
+
+
+          </div>
+          <br />
+          <div>
+              <label>Status </label>
+              <select class="select">
+                  <option> Choose status</option>
+                  <option>active</option>
+                  <option>inactive</option>
+              </select>
+
+
+          </div>
+          <br />
+          <div>
+              <label id="dpr">Department </label>
+              <input list="department" disabled id="dp" placeholder="Your department" />
+              <datalist id="department">
+                  <option>CS</option>
+                  <option>IS</option>
+                  <option>DS</option>
+                  <option>AI</option>
+                  <option>IT</option>
+              </datalist>
+
+
+          </div>
+          <br />
+          <div>
+              <label>Email </label>
+              <input type="email" placeholder="Enter your email"/>
+
+
+          </div>
+          <br />
+          <div>
+              <label>Mobile Number </label>
+              <input type="text" placeholder="Enter your phone number" />
+
+
+          </div>
+          <br />
+    
+        
+          <input type="submit" id="save" />
+          <button type="reset">reset</button>
+          <button id="confirm" >Delete</button>
+
+          
+
+          <script src="{% static 'js/mm.js' %}"></script>
+
+      </form>
+  </div>
+  </body>
+
+</html>
+
+ {% endblock content %}

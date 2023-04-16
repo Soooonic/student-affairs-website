@@ -1,0 +1,30 @@
+{%extends 'base.html'%}
+ {% block content %}
+ {% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+           search for student
+        </title>
+    </head>
+
+    <body style="background-image: url('{% static 'image/back.png' %}');">
+    <div class="sid">
+        <script defer src="{% static 'js/search by id.js' %}"></script>
+        <form action = "depart.html" onsubmit="return checkSignUpForm();">
+            <div>
+                <label >Name</label>
+                <input type="text" placeholder="student name" id = "Name">
+                <label >ID</label>
+                <input type="text" placeholder="student id" autofocus required id = 'ID'>
+                <br>
+                <button value="submit">submit</button>
+                <input type="reset" value="reset">
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
+{% endblock content %}

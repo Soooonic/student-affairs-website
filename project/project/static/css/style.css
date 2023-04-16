@@ -1,0 +1,246 @@
+/* navigation bar*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url('"/back.png"'); */
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+.topnav {
+    width: auto;
+    height: 100px;
+    overflow: hidden;
+    background-color:    transparent;
+}
+
+.topnav a {
+    float: left;
+    color:#fff;
+    text-align: center;
+    padding: 30px 15px;
+    text-decoration: lightgreen;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: cyan;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+.topnav a:focus{
+    color: lightgreen;
+}
+/*logo in navigation bar*/
+.logo{
+    width: 120px;
+    height: 125px;
+   position: absolute;
+    top: 3%;
+    left:90%;
+    border-radius: 50%;
+}
+/* content in body*/
+.add_student{
+    margin-top: 450px;
+    width: 600px;
+    height: fit-content;
+    background-color:rgba(0,0,0,0.5) ;
+    top: 50%;
+    left: 40%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 10px 50px;
+}
+h1{
+    margin-bottom: 30px;
+    padding: 0;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.add_student label{
+    display: block;
+    font-weight: bold;
+    font-size:18px ;
+    color: white;
+}
+.add_student input[type=text],.add_student input[type=number],.add_student input[type=email],.search input[type=text],
+.sid input[type=text],.inside_sid input[type=text],.update input[type=text],.update input[type=email]{
+    margin:15px 0px;
+    width:400px;
+    height: 30px;
+    background:transparent;
+    font-size: 18px;
+    outline: none;
+    border:dodgerblue;
+    border-bottom:1px solid #fff ;
+    border-radius:10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+/*selection*/
+.add_student input[type=date],.add_student select,.update input[type=date],
+.update select,.update input[list=department],.update input[type=status],.inside_sid #depart{
+
+    margin:15px 0;
+    width:400px;
+    height: 30px;
+    background: transparent;
+    font-size: 18px;
+    border-radius:10px;
+    border:dodgerblue;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+.add_student input[type=text]:focus,.add_student input[type=number]:focus,.add_student input[type=email]:focus,.add_student input[type=data]:focus
+,.add_student select:focus,.search input[type=text]:focus,.sid input[type=text]:focus,.inside_sid input[type=text]
+,.update input[type=text]:focus,.update input[type=date]:focus,.update input[list=department]:focus,.update input[type=email]:focus,
+.update select:focus{
+    box-shadow: 0 0  8px 0.6px blue;
+}
+
+.add_student input[type=radio]{
+    height: 50px;
+    width: 3%;
+}
+.add_student input[type=submit],.search button[type=submit],
+.sid button,.inside_sid input[type=submit],.status input[type=submit],.update #search,.update input[type=submit],
+.update #confirm{
+    margin: 30px 30px;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    background-color: dodgerblue;
+    border: none;
+    border-radius:50px ;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.add_student input[type=submit]:hover,.search button[type=submit]:hover,
+.sid button:hover,.inside_sid input[type=submit]:hover,.status input[type=submit]:hover,.update #search:hover,.update input[type=submit]:hover,
+.update #confirm:hover {
+    background-color: blue;
+}
+.add_student input[type=reset],.search button[type=reset],.sid input[type=reset],.update button[type=reset]{
+    margin: 30px 15px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    background-color: darkred;
+    border: none;
+    border-radius:50px ;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.add_student input[type=reset]:hover,.search button[type=reset]:hover,.sid input[type=reset]:hover,.update button[type=reset]:hover{
+background-color: red;
+}
+.search label,.sid label,.inside_sid label,.status p,.update label,.status label{
+    margin: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.status #depart{
+    margin-left:200px;
+    width: 4%;
+}
+/*info*/
+.info{
+    margin-top: 500px;
+    width: 600px;
+    height:1000px;
+    top: 40%;
+    left: 25%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 60px;
+}
+.info #zz{
+    width: 130px;
+    height: 160px;
+    border-radius:300px ;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.info #A{
+    width: 130px;
+    height: 160px;
+    border-radius:300px ;
+    position: absolute;
+    top: 20%;
+    left: 0;
+
+}.info #abdo{
+    width: 130px;
+    height: 160px;
+    border-radius:300px ;
+    position: absolute;
+    top: 60%;
+    left: 0;
+
+}.info #ahmed{
+    width: 130px;
+    height: 160px;
+    border-radius:300px ;
+    position: absolute;
+    top: 40%;
+    left: 0;
+
+}
+.info #mohamed{
+    width: 130px;
+    height: 160px;
+    border-radius:300px ;
+    position: absolute;
+    top: 80%;
+    left: 0;
+
+}
+.zeyad {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+
+}
+.Ali{
+    position: absolute;
+    top: 22%;
+    left: 30%;
+}
+.A-Ali{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+.abdo{
+    position: absolute;
+    top: 60%;
+    left: 30%;
+}
+.mohamed{
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+.info h2{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: -10%;
+    left: 10%;
+}

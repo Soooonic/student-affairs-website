@@ -1,0 +1,103 @@
+{%extends 'base.html'%}
+ {% block content %}
+ {% load static %}
+ <html>
+  <head>
+      <meta charset="utf-8" />
+      <title>Sign up</title>
+      <script defer src="{% static 'js/main.js'%}"></script>
+  </head>
+  <body style="background-image: url('{% static 'image/back.png' %}');">
+  </div>
+  <div class="add_student">
+      <h1>sign up</h1>
+      <form onsubmit=" return checkSignUpForm();"method="post">
+        {% csrf_token %}
+          <div>
+              <label>Name</label>
+              <input type="text"  placeholder="NAME" id="Name" name="Name"/>
+          </div>
+          <br />
+          <div>
+              <label>Email</label>
+              <input type="text"  placeholder="Enter Your email" id ="Email" name="email"/>
+          </div>
+          <br />
+          <div>
+              <label>Id</label>
+              <input type="text"  placeholder="ID" id ="ID" name="id"/>
+          </div>
+          <br />
+          <div>
+              <label>Status</label>
+              <select required name="status">
+                  <option value="" disabled selected hidden>Choose status</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+  
+  
+              </select>
+          </div>
+          <br />   
+          <div>
+              <label>Level</label>
+              <select required name="level">
+                  <option value="" disabled selected hidden>Choose Level</option>
+                  <option value="first">First</option>
+                  <option value="second">Second</option>
+                  <option value="third">Third</option>
+                  <option value="fourth">Fourth</option>
+              </select>
+          </div>
+          <br />
+          <div>
+              <label>Department</label>
+              <select required name="department">
+                  <option value="" disabled selected hidden>Choose Department</option>
+                  <option value="General">General</option>
+                  <option value="Computer Science">Computer Science</option>
+                  <option value="Information System">Information System</option>
+                  <option value="Information Technology">Information Technology</option>
+                  <option value="Decision Support">Decision Support</option>
+                  <option value="Artificial Intelligence">Artificial Intelligence</option>
+              </select>
+          </div>
+          <br />
+          <div>
+              <label>GPA</label>
+              <input type="number"  placeholder="GPA" id ="gpa" step="0.01" name="gpa"/>
+          </div>
+          <br />
+          <div>
+              <label>Date of birth</label>
+              <input type="date" required name="dateOfBirth"/>
+          </div>
+          <br />
+          <div >
+              <label> Gender</label>
+              <input type="radio" name="gender" value="Male"/>
+              <label>Male</label>
+  
+              <input type="radio" name="gender" value="Female"/>
+              <label id="f">Female</label>
+          </div>
+          <br />
+          <div>
+              <label>Phone Number</label>
+              <input type="text" placeholder="phone number" id="phone" name="phone"/>
+          </div>
+          <br />
+          <div>
+              <input type="submit" />
+              <input type="reset" />
+          </div>
+          <br />
+  
+      </form>
+  
+  </div>
+  
+     
+  </body>
+  </html>
+ {% endblock content %}
